@@ -1,25 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My first web page</title>
-    </head>
-<style>
-    img{
-        width: 120px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-    }
-    .username{
-        font-weight: bold;
-        /* margin-right: 10px; */
-
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <img src="images/my photo.jpg" alt="Sherif Toiema's photo">
-    <p class="username">@Sherif Toiema</p>
-    <p>I love learing and teaching</p>
     
+    <form >
+        
+            <fieldset>
+                <legend>Personal Data</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                            <input type="email" placeholder="Email">
+                        </td>
+                    </tr>  
+                    <tr>  
+                        <td>
+                            <label>Password</label>
+                            <input type="password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone</label>
+                            <input type="text" placeholder="Phone Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Gender</label>
+                            <input type="radio" name="male"  value="male" checked />
+                            <label for="male">Male</label>
+                            <input type="radio" name="female"  value="female" checked />
+                            <label for="female">Female</label>                            
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        <fieldset>
+                <legend>Education</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Faculty</label>
+                            <input type="text" placeholder="faculty">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Degree</label>
+                            <input type="text" placeholder="degree">
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+                <legend>Experience</legend>
+                <table>
+                    <tr>
+                        English
+                        <td>
+                            <input type="radio" name="A1">
+                            <label for="A1">A1</label>
+                            
+                            <input type="radio" name="A2">
+                            <label for="A2">A2</label>
+
+                            <input type="radio" name="B1">
+                            <label for="B1">B1</label>
+
+                            <input type="radio" name="B2">
+                            <label for="B2">B2</label>
+
+                            <input type="radio" name="C1">
+                            <label for="C1">C1</label>
+
+                            <input type="radio" name="C2">
+                            <label for="C2">C2</label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Degree</label>
+                            <input type="text" placeholder="degree">
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+
+
+
+
+          <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">Scales</label>
+  </div>
+
+    </form>
+
 </body>
 </html>
